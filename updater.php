@@ -537,6 +537,7 @@ class Updater
                 if (trim($keyword['value']) == "")
                     continue;
 		
+		// If keyword is too long
 		if(strlen($keyword['value'])> 254)
 			$keyword['value']=substr($keyword['value'],1,254);
 			
